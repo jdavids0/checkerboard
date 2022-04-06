@@ -1,0 +1,38 @@
+/* wasn't able to link static stylesheet - server wouldn't run with it linked, so I had to just in-line style; Bootstrap link seems to work OK so I will use that going forward */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: red;
+    border-radius: 2%;
+    width: 80%;
+    min-height: 100px;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.container{
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat (8, 80px);
+    /* grid-auto-flow: row; */
+    background-color: black;
+    width: 80%;
+    height: 80%;
+}
